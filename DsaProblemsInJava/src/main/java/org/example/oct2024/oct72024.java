@@ -1,4 +1,4 @@
-package org.example;
+package org.example.oct2024;
 
 public class oct72024 {
     public int minLength(String s){
