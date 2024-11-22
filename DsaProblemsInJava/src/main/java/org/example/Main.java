@@ -1,9 +1,12 @@
 package org.example;
 
-import java.util.ArrayList;
+import org.example.DSATopicWiseQuestions.ArrayQuestions.KadanesAlgorithm;
+import org.example.nov2024.Nov082024;
+import org.example.nov2024.Nov152024;
+import org.example.nov2024.Nov32024;
+import org.example.oct2024.*;
+
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,24 +25,49 @@ public class Main {
 //        System.out.println(new oct102024().maxWidthRamp(new int[]{}));
 //        System.out.println(new oct102024().maxWidthRampBruteForce(new int []{}));
 //        System.out.println(new oct102024().maxWidthRampSelfUpdated(new int []{}));
-        int [][] arr2d = new int[][]{{1,4},{2,3},{4,6}};
-        int [][] arr2d2 = new int[][]{{3,10},{1,5},{2,6}};
-
-        List<List<Integer>> nums = new ArrayList<>();
-        List<Integer> l1 = new ArrayList<>();
-        List<Integer> l2 = new ArrayList<>();
-        List<Integer> l3 = new ArrayList<>();
-
-        Collections.addAll(l1, 4,10,15,24,26);
-        Collections.addAll(l2,0,9,12,20);
-        Collections.addAll(l3,5,18,22,30);
-        nums.add(l1);
-        nums.add(l2);
-        nums.add(l3);
+//        int [][] arr2d = new int[][]{{1,4},{2,3},{4,6}};
+//        int [][] arr2d2 = new int[][]{{3,10},{1,5},{2,6}};
+//
+//        List<List<Integer>> nums = new ArrayList<>();
+//        List<Integer> l1 = new ArrayList<>();
+//        List<Integer> l2 = new ArrayList<>();
+//        List<Integer> l3 = new ArrayList<>();
+//
+//        Collections.addAll(l1, 4,10,15,24,26);
+//        Collections.addAll(l2,0,9,12,20);
+//        Collections.addAll(l3,5,18,22,30);
+//        nums.add(l1);
+//        nums.add(l2);
+//        nums.add(l3);
 //        System.out.println(new oct112024().smallestChair(arr2d,1));
 //        System.out.println(new oct112024().smallestChair(arr2d2,0));
 //
 //        System.out.println(new oct122024().minGroupsGPT(new int[][]{{1,5},{5,7}}));
-        System.out.println(Arrays.toString(new oct132024().smallestRangeBruteForce(nums)));
+//        System.out.println(Arrays.toString(new oct132024().smallestRangeBruteForce(nums)));
+//        System.out.println(new oct142024().maxKelements(new int[]{10,10,10,10,10},5));
+//        System.out.println(new oct142024().maxKelements(new int[]{756902131,995414896,95906472,149914376,387433380,848985151},6));
+//        System.out.println(new oct152024().minimumSteps("101"));
+//        System.out.println(new oct152024().minimumSteps("100"));
+//        System.out.println(new oct152024().minimumSteps("0111"));
+
+//        System.out.println(new oct162024().longestDiverseString(7,1,0));
+
+//        System.out.println(new oct172024().maximumSwap(9973));
+//        System.out.println(new oct012024().canArrange(new int[]{2,2,2,4},4));
+//        System.out.println(new oct182024().countMaxOrSubsets(new int[]{3,2,1,5}));
+//        System.out.println(new oct192024().findKthBitGPT(4,11));
+//        System.out.println(new oct202024().parseBoolExpr("|(t,f,f)"));
+//        System.out.println(new oct212024().maxUniqueSplit("wwwzfvedwfvhsww"));
+        //System.out.println(new oct252024().removeSubfolders(new String[]{"/a","/a/b","/c/d","/c/d/e","/c/f"}));
+
+
+        //System.out.println(new oct312024().minimumTotalDistance(Arrays.asList(9,11),new int[][]{{10,1},{7,1},{14,1}}));
+
+        //System.out.println(Arrays.toString(new Nov082024().getMaximumXor(new int[]{0,1,2,2,5,7}, 3)));
+
+        //System.out.println(new Nov152024().findLengthOfShortestSubarray(new int[]{1,2,3,10,0,7,8,9}));
+        System.out.println(new KadanesAlgorithm().maxSubArray(new int[]{-2,-1,-3}));
     }
+
+
 }
