@@ -1,7 +1,6 @@
 package org.example.DSATopicWiseQuestions.graphs;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 class NodeElem{
     private int nodeId;
@@ -19,6 +18,16 @@ class NodeElem{
 
     public int getNodeWeightFromLastPoint() {
         return nodeWeightFromLastPoint;
+    }
+
+    @Override public boolean equals(Object object){
+        try{
+            NodeElem nodeElem = (NodeElem) object;
+            return nodeElem.nodeId==nodeId && nodeElem.nodeWeightFromLastPoint == nodeWeightFromLastPoint;
+        }
+        catch (Exception e){
+            return false;
+        }
     }
 
 }
@@ -93,6 +102,58 @@ public class Graph {
         return distance;
     }
 
+    public List<int[]> minimumSpanningTree(int src){
+        int[] visited = new int[graphNodesFromANodeList.size()];
+        for(int i=0; i<visited.length; i++){
+            visited[i] = -1;
+        }
+        int visitCounter =0;
+
+
+        visited[src] = 1;
+
+       List<int[]> edgeList = new ArrayList<>();
+       while(visitCounter<graphNodesFromANodeList.size()-1){
+           ArrayList<Integer> minEdge = getMinEdgeInVisited(visited);
+           if(minEdge.get(0)==-1){
+               break;
+           }
+           int[] edge = new int[3];
+           edge[0] = minEdge.get(0);
+           edge[1] = minEdge.get(1);
+           edge[2] = minEdge.get(2);
+           edgeList.add(edge);
+           visited[minEdge.get(2)] = 1;
+           visitCounter++;
+       }
+
+       return edgeList;
+
+    }
+
+    private ArrayList<Integer> getMinEdgeInVisited(int[] visited) {
+        int minEdgeWeight = Integer.MAX_VALUE;
+        int minSource = -1;
+        int minDest = -1;
+        for(int i=0; i<visited.length; i++){
+            if(visited[i]!=-1){
+                for(NodeElem nodeElem: graphNodesFromANodeList.get(i)){
+                    if(visited[nodeElem.getNodeId()]==-1 && nodeElem.getNodeWeightFromLastPoint()<minEdgeWeight){
+                        minDest = nodeElem.getNodeId();
+                        minSource = i;
+                        minEdgeWeight = nodeElem.getNodeWeightFromLastPoint();
+                    }
+                }
+            }
+        }
+
+        ArrayList<Integer> result = new ArrayList<>();
+        result.add(minSource);
+        result.add(minDest);
+        result.add(minEdgeWeight);
+
+        return result;
+    }
 
 
 }
