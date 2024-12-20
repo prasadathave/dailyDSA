@@ -11,9 +11,9 @@ import static java.util.stream.Collectors.toList;
 
 public class oct222024 {
     public class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
+      public int val;
+      public TreeNode left;
+      public TreeNode right;
       TreeNode() {}
       TreeNode(int val) { this.val = val; }
       TreeNode(int val, TreeNode left, TreeNode right) {
