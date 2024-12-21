@@ -9,11 +9,9 @@ public class Dec202024 {
         }
 
         if(level%2==0){
-
             int v = rootLeft.val;
             rootLeft.val = rootRight.val;
             rootRight.val = v;
-
         }
         reverseIt(level+1,rootLeft.left,rootRight.right);
         reverseIt(level+1,rootLeft.right,rootRight.left);
