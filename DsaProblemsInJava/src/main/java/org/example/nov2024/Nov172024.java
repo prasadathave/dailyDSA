@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Nov172024 {
-    public class Pair<T, U> {
+    public static class Pair<T, U> {
         private T first;
         private U second;
 
