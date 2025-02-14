@@ -1,12 +1,11 @@
 package org.example.Feb2025;
 
 import java.util.ArrayList;
-class ProductOfNumbers {
-
+class Feb142025 {
     ArrayList<Integer>list=new ArrayList<>();
     int prod=1;
 
-    public ProductOfNumbers() {
+    public Feb142025() {
     }
 
     public void add(int num) {
