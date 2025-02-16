@@ -1,6 +1,6 @@
 package org.example.Feb2025;
 
-public class Feb04202 {
+public class Feb042025 {
     public int maxAscendingSum(int[] nums) {
         int sum = nums[0];
         int maxSum = Integer.MIN_VALUE;
