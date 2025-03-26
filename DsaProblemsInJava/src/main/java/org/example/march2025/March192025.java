@@ -1,6 +1,6 @@
 package org.example.march2025;
 
-public class March19205 {
+public class March192025 {
     public int minOperations(int[] nums) {
         int op =0;
 
