@@ -1,4 +1,6 @@
-public class Apr022025 {
+package org.example.Apr2025;
+
+public class April022025 {
     public long maximumTripletValue(int[] nums) {
         long ans =0L;
         int n = nums.length;
