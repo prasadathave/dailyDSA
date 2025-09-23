@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.DSATopicWiseQuestions.ArrayQuestions.KadanesAlgorithm;
+import org.example.Sep2025.Sep232025;
 import org.example.nov2024.Nov082024;
 import org.example.nov2024.Nov152024;
 import org.example.nov2024.Nov302024;
@@ -69,8 +70,9 @@ public class Main {
         //System.out.println(new Nov152024().findLengthOfShortestSubarray(new int[]{1,2,3,10,0,7,8,9}));
 //        System.out.println(new KadanesAlgorithm().maxSubArray(new int[]{-2,-1,-3}));
         //System.out.println(Arrays.deepToString(new Nov302024().validArrangement(new int[][]{{5, 1}, {4, 5}, {11, 9}, {9, 4}})));
-        System.out.println(Arrays.deepToString(new Nov302024().validArrangement1(new int[][]{{8,5},{8,7},{0,8},{0,5},{7,0},{5,0},{0,7},{8,0},{7,8}})));
+//        System.out.println(Arrays.deepToString(new Nov302024().validArrangement1(new int[][]{{8,5},{8,7},{0,8},{0,5},{7,0},{5,0},{0,7},{8,0},{7,8}})));
 
+        System.out.println(new Sep232025().compareVersion("1.10","1.2"));
     }
 
 
