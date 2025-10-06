@@ -27,6 +27,7 @@ public class Sep232025 {
             else if(num1!=num2){
                 return -1;
             }
+            
         }
         if(minSize == v1Split.length){
             return -1 * compareFromIndex(v2Split,minSize);

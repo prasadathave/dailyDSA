@@ -72,7 +72,38 @@ public class Main {
         //System.out.println(Arrays.deepToString(new Nov302024().validArrangement(new int[][]{{5, 1}, {4, 5}, {11, 9}, {9, 4}})));
 //        System.out.println(Arrays.deepToString(new Nov302024().validArrangement1(new int[][]{{8,5},{8,7},{0,8},{0,5},{7,0},{5,0},{0,7},{8,0},{7,8}})));
 
-        System.out.println(new Sep232025().compareVersion("1.10","1.2"));
+//        System.out.println(new Sep232025().compareVersion("1.10","1.2"));
+
+//        int[] arr = new int[]{5,11,1,3,15};
+//        int trailingMin = arr[0];
+//        int maxVal = Integer.MIN_VALUE;
+//        for(int i=0; i<arr.length; i++){
+//            if(maxVal<(arr[i]-trailingMin)){
+//                maxVal = arr[i] - trailingMin;
+//            }
+//            if(arr[i]<trailingMin){
+//                trailingMin = arr[i];
+//            }
+//        }
+//        System.out.println(trailingMin);
+//        System.out.println(maxVal);
+
+        int numExchange = 3;
+        int numBottles = 15;
+
+        int drinkables = numBottles;
+        int drunkBottles = 0;
+        int emptyBottles =0;
+        while(drinkables>0 ){
+
+            drunkBottles += drinkables;
+            emptyBottles += drinkables%numExchange;
+            drinkables = drinkables/numExchange + emptyBottles/numExchange;
+            emptyBottles = emptyBottles%numExchange;
+        }
+        System.out.println(drunkBottles);
+
+
     }
 
 
